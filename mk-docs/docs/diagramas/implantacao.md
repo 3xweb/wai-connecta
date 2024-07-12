@@ -36,26 +36,37 @@ A plataforma WAI Conecta é implementada utilizando uma arquitetura moderna e es
 #### Diagrama de Implantação em Mermaid
 
 ```mermaid
----
-title: Diagrama de Implantação
----
 flowchart TB
     subgraph Cliente
         direction LR
-        A[Cliente Web] -->|HTTPS| B[Servidor Web]
-        C[Cliente Móvel] -->|HTTPS| B[Servidor Web]
+        A[Cliente Web]
+        B[Cliente Móvel]
     end
 
     subgraph Servidores
-        B -->|API Requests| D[Servidor de API (Strapi)]
-        D -->|SQL/NoSQL Queries| E[Banco de Dados]
-        D -->|Auth Requests| F[Servidor de Autenticação]
+        direction TB
+        C[Servidor Web]
+        D[Servidor de API]
+        E[Banco de Dados]
+        F[Servidor de Autenticação]
     end
 
-    subgraph Terceiros
-        F -->|OAuth| G[Serviços de Autenticação (Google, Apple)]
-        D -->|API| H[WhatsApp]
+    subgraph Servicos_Terceiros
+        direction TB
+        G[Serviços de Autenticação]
+        H[WhatsApp]
     end
+
+    A -->|HTTPS| C
+    B -->|HTTPS| C
+    C -->|API Requests| D
+    D -->|SQL/NoSQL Queries| E
+    D -->|Auth Requests| F
+    F -->|OAuth| G
+    D -->|API| H
+
+
+
 ```
 
 ### Componentes do Diagrama
