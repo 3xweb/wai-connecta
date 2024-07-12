@@ -689,26 +689,37 @@
 </li>
 </ol>
 <h4 id="diagrama-de-implantacao-em-mermaid">Diagrama de Implantação em Mermaid</h4>
-<pre class="mermaid"><code>---
-title: Diagrama de Implantação
----
-flowchart TB
+<pre class="mermaid"><code>flowchart TB
     subgraph Cliente
         direction LR
-        A[Cliente Web] --&gt;|HTTPS| B[Servidor Web]
-        C[Cliente Móvel] --&gt;|HTTPS| B[Servidor Web]
+        A[Cliente Web]
+        B[Cliente Móvel]
     end
 
     subgraph Servidores
-        B --&gt;|API Requests| D[Servidor de API (Strapi)]
-        D --&gt;|SQL/NoSQL Queries| E[Banco de Dados]
-        D --&gt;|Auth Requests| F[Servidor de Autenticação]
+        direction TB
+        C[Servidor Web]
+        D[Servidor de API]
+        E[Banco de Dados]
+        F[Servidor de Autenticação]
     end
 
-    subgraph Terceiros
-        F --&gt;|OAuth| G[Serviços de Autenticação (Google, Apple)]
-        D --&gt;|API| H[WhatsApp]
-    end</code></pre>
+    subgraph Servicos_Terceiros
+        direction TB
+        G[Serviços de Autenticação]
+        H[WhatsApp]
+    end
+
+    A --&gt;|HTTPS| C
+    B --&gt;|HTTPS| C
+    C --&gt;|API Requests| D
+    D --&gt;|SQL/NoSQL Queries| E
+    D --&gt;|Auth Requests| F
+    F --&gt;|OAuth| G
+    D --&gt;|API| H
+
+
+</code></pre>
 <h3 id="componentes-do-diagrama">Componentes do Diagrama</h3>
 <ol>
 <li>
