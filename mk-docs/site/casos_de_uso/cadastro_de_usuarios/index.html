@@ -1,0 +1,754 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../vis%C3%A3o_geral_do_sistema/">
+      
+      
+        <link rel="next" href="../cadastro_de_empresas/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.23">
+    
+    
+      
+        <title>Cadastro de Usuários - Wai Conecta</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cadastro-de-usuarios" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Wai Conecta" class="md-header__button md-logo" aria-label="Wai Conecta" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wai Conecta
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cadastro de Usuários
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../vis%C3%A3o_geral_do_sistema/" class="md-tabs__link">
+        
+  
+    
+  
+  Visão Geral do Sistema
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Casos de Uso
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../diagramas/implantacao/" class="md-tabs__link">
+          
+  
+  Diagramas UML
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../referencias/" class="md-tabs__link">
+        
+  
+    
+  
+  Referências
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Wai Conecta" class="md-nav__button md-logo" aria-label="Wai Conecta" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Wai Conecta
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vis%C3%A3o_geral_do_sistema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visão Geral do Sistema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Casos de Uso
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cadastro de Usuários
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cadastro de Usuários
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cadastro-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cadastro de Usuários
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cadastro de Usuários">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descricao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descrição
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beneficios-do-cadastro-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefícios do Cadastro de Usuários
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passos-do-cadastro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Passos do Cadastro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiencia-do-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experiência do Usuário
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cadastro_de_empresas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadastro de Empresas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pacotes_de_contratacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pacotes de Contratação para Empresas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Página Inicial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../diagramas/implantacao/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Diagramas UML
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Referências
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Cadastro de Usuários</h1>
+
+<h3 id="cadastro-de-usuarios">Cadastro de Usuários</h3>
+<h4 id="descricao">Descrição</h4>
+<p>O processo de cadastro de usuários na plataforma WAI Conecta é projetado para ser o mais simples e intuitivo possível, proporcionando uma experiência de registro rápida e conveniente. A plataforma oferece várias opções para que os usuários possam se cadastrar de maneira que melhor atenda às suas necessidades, seja através do preenchimento de um formulário básico ou utilizando suas contas do Google ou Apple.</p>
+<h4 id="beneficios-do-cadastro-de-usuarios">Benefícios do Cadastro de Usuários</h4>
+<ol>
+<li><strong>Acesso a Recursos Exclusivos:</strong> Usuários cadastrados têm acesso a uma gama de funcionalidades e recursos adicionais que não estão disponíveis para usuários não registrados.</li>
+<li><strong>Personalização da Experiência:</strong> Com um perfil registrado, os usuários podem personalizar suas preferências e receber recomendações de serviços mais relevantes.</li>
+<li><strong>Facilidade de Comunicação:</strong> O cadastro permite uma comunicação mais direta e eficiente com as empresas e a plataforma.</li>
+<li><strong>Segurança e Confiabilidade:</strong> A verificação de e-mail garante a autenticidade dos usuários, aumentando a segurança da plataforma.</li>
+</ol>
+<h4 id="passos-do-cadastro">Passos do Cadastro</h4>
+<ol>
+<li>
+<p><strong>Página de Registro:</strong></p>
+<ul>
+<li><strong>Acesso Inicial:</strong> Ao optar por se cadastrar, os usuários são direcionados para uma página de registro clara e bem definida, onde encontram todas as instruções necessárias para iniciar o processo de criação de conta.</li>
+<li><strong>Design Atraente e Intuitivo:</strong> A página é projetada com um design atraente e interface amigável, facilitando a navegação e incentivando o usuário a completar o cadastro.</li>
+</ul>
+</li>
+<li>
+<p><strong>Formulário de Cadastro:</strong></p>
+<ul>
+<li><strong>Informações Básicas:</strong> O formulário solicita informações essenciais como nome completo, endereço de e-mail e senha. Esses dados são fundamentais para a criação e gerenciamento da conta do usuário na plataforma.</li>
+<li><strong>Campos Obrigatórios:</strong> Todos os campos obrigatórios são claramente marcados para garantir que o usuário forneça todas as informações necessárias para completar o cadastro.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opção de Registro com Conta Google:</strong></p>
+<ul>
+<li><strong>Integração com Google:</strong> Para oferecer uma opção de registro rápida e conveniente, os usuários podem optar por se registrar utilizando suas contas do Google.</li>
+<li><strong>Preenchimento Automático:</strong> Ao selecionar essa opção, as informações associadas à conta do Google do usuário são utilizadas para preencher automaticamente o formulário de registro, simplificando o processo.</li>
+</ul>
+</li>
+<li>
+<p><strong>Opção de Registro com Conta Apple:</strong></p>
+<ul>
+<li><strong>Integração com Apple:</strong> Similar à opção de registro com o Google, os usuários também podem optar por se registrar utilizando suas contas da Apple.</li>
+<li><strong>Facilidade de Uso:</strong> Esta opção oferece a conveniência de usar as credenciais da Apple para criar uma conta na WAI Conecta de forma rápida e segura.</li>
+</ul>
+</li>
+<li>
+<p><strong>Confirmação de Cadastro:</strong></p>
+<ul>
+<li><strong>Verificação por E-mail:</strong> Após preencher o formulário de registro ou optar pelo registro com uma conta do Google ou Apple, os usuários recebem uma confirmação de cadastro por e-mail.</li>
+<li><strong>Autenticidade da Conta:</strong> O e-mail de confirmação inclui um link que o usuário deve clicar para verificar a autenticidade da conta. Este passo é crucial para garantir que o endereço de e-mail fornecido seja válido e pertença ao usuário.</li>
+</ul>
+</li>
+<li>
+<p><strong>Perfil de Usuário:</strong></p>
+<ul>
+<li><strong>Acesso ao Perfil:</strong> Uma vez confirmado o cadastro, os usuários têm acesso ao seu perfil na plataforma, onde podem visualizar e editar suas informações pessoais.</li>
+<li><strong>Gestão de Preferências:</strong> O perfil permite que os usuários gerenciem suas preferências de comunicação, como notificações e atualizações.</li>
+<li><strong>Histórico e Interações:</strong> Os usuários podem também acessar o histórico de serviços solicitados e as interações com as empresas através de sua conta.</li>
+</ul>
+</li>
+</ol>
+<h4 id="experiencia-do-usuario">Experiência do Usuário</h4>
+<ul>
+<li><strong>Interface Amigável:</strong> Todo o processo de cadastro é desenhado para ser simples e intuitivo, minimizando o tempo e o esforço necessários para o usuário criar uma conta.</li>
+<li><strong>Suporte ao Usuário:</strong> Em caso de dúvidas ou problemas durante o cadastro, a plataforma oferece suporte ao usuário, com FAQs e canais de contato disponíveis para assistência imediata.</li>
+<li><strong>Privacidade e Segurança:</strong> A WAI Conecta leva a privacidade e a segurança dos dados dos usuários a sério, utilizando tecnologias de criptografia e práticas de segurança robustas para proteger as informações pessoais dos usuários.</li>
+</ul>
+<p>Com um processo de cadastro bem delineado e várias opções convenientes, a WAI Conecta garante que os usuários possam se registrar de maneira rápida e sem complicações, permitindo que eles aproveitem ao máximo os recursos e serviços oferecidos pela plataforma.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.prune", "navigation.sections", "search.highlight", "search.share", "toc.integrate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+      
+    
+  </body>
+</html>
